@@ -44,9 +44,13 @@
     <div class="doc">
         <h1>Crash Documentation for begginers</h1>
         <section class="html-snippet">
-            <h1>Code like this!</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quam aliquid eveniet natus voluptas, cupiditate, quibusdam eum eaque quas ut molestiae exercitationem laudantium beatae quae? Accusantium veniam, ab harum voluptas explicabo illum soluta enim dicta unde aspernatur labore maxime quos ipsa nostrum? Praesentium corporis voluptatibus odit sint ratione, minus recusandae ullam, at culpa ipsum a, minima ab consequuntur veritatis sit inventore voluptas est adipisci? Quae alias, quisquam ratione itaque dolore impedit praesentium commodi hic vel consectetur nam saepe natus ea blanditiis distinctio dolorem dicta eos maiores, culpa architecto sapiente, iste illo officia? Sapiente at alias cumque eum voluptates sequi exercitationem.</p>
-        </section>
+            <h1>HTML | Quick Intro</h1>
+            <p>Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.
+
+            Web browsers receive <strong>HTML</strong> documents from a web server or from local storage and render the documents into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document. </p>
+            <p class="info">
+                <i class=" fas fa-arrow-right"></i>From Wikipedia<a target="_blank" class="doc-links" href="https://en.wikipedia.org/wiki/HTML">Read more<i class="arrow-right"></i> </a> </section>
+            </p>
         
         <!-- HTML Sample Code -->
         <pre>
@@ -54,17 +58,20 @@
             contenteditable="false" 
             class="html">
             &lt;!-- HTML demo code here -->
-            &lt;h1>Headin tag &lt;/h1>
+            &lt;h1>Heading 1 tag element &lt;/h1>
             &lt;div>
-                &lt;h2>Highlighted Html Code &lt;/h2>
-                &lt;p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, eaque.&lt;/p>
+                &lt;h2>Heading 2 tag element &lt;/h2>
+                &lt;p>This is a paragraph tag element&lt;/p>
             &lt;/div>
             </code>
         </pre>
 
         <section class="css-snippet">
-            <h1>Code like this!</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quam aliquid eveniet natus voluptas, cupiditate, quibusdam eum eaque quas ut molestiae exercitationem laudantium beatae quae? Accusantium veniam, ab harum voluptas explicabo illum soluta enim dicta unde aspernatur labore maxime quos ipsa nostrum? Praesentium corporis voluptatibus odit sint ratione, minus recusandae ullam, at culpa ipsum a, minima ab consequuntur veritatis sit inventore voluptas est adipisci? Quae alias, quisquam ratione itaque dolore impedit praesentium commodi hic vel consectetur nam saepe natus ea blanditiis distinctio dolorem dicta eos maiores, culpa architecto sapiente, iste illo officia? Sapiente at alias cumque eum voluptates sequi exercitationem.</p>
+            <h1>CSS | Quick Intro</h1>
+            <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. <strong>CSS</strong> is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.
+             <p class="info">
+                <i class=" fas fa-arrow-right"></i>From Wikipedia<a target="_blank" class="doc-links" href="https://en.wikipedia.org/wiki/CSS">Read more <i class="arrow"></i></a> 
+             </p>
         </section>
 
         <!-- CSS Sample Code -->
@@ -80,19 +87,19 @@
                     line-height: 1.5;
                 }
 
-                .search {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                }
-
             </code>
         </pre>
         <section class="js-snippet">
-            <h1>Code like this!</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quam aliquid eveniet natus voluptas, cupiditate, quibusdam eum eaque quas ut molestiae exercitationem laudantium beatae quae? Accusantium veniam, ab harum voluptas explicabo illum soluta enim dicta unde aspernatur labore maxime quos ipsa nostrum? Praesentium corporis voluptatibus odit sint ratione, minus recusandae ullam, at culpa ipsum a, minima ab consequuntur veritatis sit inventore voluptas est adipisci? Quae alias, quisquam ratione itaque dolore impedit praesentium commodi hic vel consectetur nam saepe natus ea blanditiis distinctio dolorem dicta eos maiores, culpa architecto sapiente, iste illo officia? Sapiente at alias cumque eum voluptates sequi exercitationem.</p>
-        </section>
+            <h1>JavaScript | Quick Intro</h1>
+            <p>Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide Web. <strong >JavaScript</strong> enables interactive web pages and is an essential part of web applications. The vast majority of websites use it for client-side page behavior, and all major web browsers have a dedicated <strong>JavaScript</strong> engine to execute it.
+
+             As a multi-paradigm language,JavaScript supports event-driven, functional, and imperative programming styles. It has application programming interfaces (APIs) for working with text, dates, regular expressions, standard data structures, and the Document Object Model (DOM).
+
+             The ECMAScript standard does not include any input/output (I/O), such as networking, storage, or graphics facilities. In practice, the web browser or other runtime system provides JavaScript APIs for I/O. </p>
+            <p class="info">
+                <i class=" fas fa-arrow-right"></i>From Wikipedia<a target="_blank" class="doc-links" href="https://en.wikipedia.org/wiki/JavaScript">Read more</a> 
+            </p>
+            </section>
 
         <!-- Javascriot Sample Code -->
         <pre>
@@ -100,13 +107,16 @@
             contenteditable="false" 
             class="Javasciptpt">
             /* Javascript demo code comment here*/
-            document.addEventListener('DOMContentLoaded', (event) => {
-                document.querySelectorAll('pre code').forEach((block) => {
-                hljs.highlightBlock(block);
+           const humberger = document.querySelector('.humberger');
+           const nav = document.querySelector('.menu-bar');
+           const close = document.querySelector('#close');
+           
+           document.addEventListener('DOMContententLoaded', () => {
+               const cards = document.querySelectorAll('pre');
+               cards.forEach((el) => {
+                   const card = el.classList.add('slide')
                 })
             })
-
-
             </code>
         </pre>
     </div>

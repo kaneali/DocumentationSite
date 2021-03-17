@@ -191,23 +191,28 @@ header p {
     color: indigo;
 }
 
+
+
 section {
     text-align:justify;
     width: 70%;
     margin: 4rem auto;
-    border-left: 10px solid #9c9c9c;
+    border-left: 5px solid red;
     border-left-style: ridge;
-    border-bottom: 2px solid #9c9c9c;
-    padding: 0 0 1rem 1rem;
+    border-bottom: 2px solid red;
+    padding:1rem 2rem;
     font-size: 1rem;
     line-height: 1.5;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+
 
 }
+
 
 .html-snippet h1 {
     line-height: 2;
     font-weight: 700;
-    color: #333;
+    color: red;
 }
 
 .css-snippet h1 {
@@ -219,11 +224,11 @@ section {
 .js-snippet h1 {
     line-height: 2;
     font-weight: 700;
-    color: orange;
+    color: gold;
 }
 
 .css-snippet{
-    border-left: 10px solid dodgerblue;
+    border-left: 5px solid dodgerblue;
     border-left-style: ridge;
     border-bottom: 2px solid dodgerblue;
     border-bottom-style: solid;
@@ -231,11 +236,37 @@ section {
 }
 
 .js-snippet {
-    border-left: 10px solid orange;
+    border-left: 5px solid gold;
     border-left-style: ridge;
-    border-bottom: 2px solid orange;
+    border-bottom: 2px solid gold;
     border-bottom-style: solid;
 
+}
+
+.doc-links  {
+    float: right;
+    text-decoration: none;
+    background: indigo;
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.doc-links:hover {
+    letter-spacing: 2px;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.info  {
+    margin-top: 1rem;
+    
+}
+
+.fa-arrow-right {
+    color: indigo;
+    margin-right: 0.5rem;
 }
 
 
@@ -249,7 +280,7 @@ pre {
 code {
     
     width: 100%;
-    height: 25rem;
+    height: auto;
     font-size: 1rem;
     font-family: 'Fira Code',sans-serif; 
     border: 10px solid #333;
