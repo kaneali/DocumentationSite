@@ -204,14 +204,25 @@ section {
 
 }
 
-section h1 {
+.html-snippet h1 {
     line-height: 2;
-    text-transform: uppercase;
     font-weight: 700;
     color: #333;
 }
 
-section:nth-child(odd){
+.css-snippet h1 {
+    line-height: 2;
+    font-weight: 700;
+    color: dodgerblue;
+}
+
+.js-snippet h1 {
+    line-height: 2;
+    font-weight: 700;
+    color: orange;
+}
+
+.css-snippet{
     border-left: 10px solid dodgerblue;
     border-left-style: ridge;
     border-bottom: 2px solid dodgerblue;
@@ -219,7 +230,7 @@ section:nth-child(odd){
 
 }
 
-section:last-child {
+.js-snippet {
     border-left: 10px solid orange;
     border-left-style: ridge;
     border-bottom: 2px solid orange;
