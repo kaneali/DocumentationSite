@@ -13,10 +13,27 @@
     
 </head>
 <body>
+    <div class="form-container" id="form-container">
+
+        <form class="form" action="">
+            <i class="fas fa-times close"></i>
+            <div>
+                <label for="name">Name</label>
+                <input type="text" placeholder="Enter your name please">
+            </div>
+            <div>
+                <label for="name">Email</label>
+                <input type="text" placeholder="Enter your email please">
+            </div>
+            <input class="form-btn"type="submit" value="Submit">
+        </form>
+    </div>
     <header>
+        
         <div class="humberger">
             <i class="fas fa-bars"></i>
         </div>
+        
         <nav class="menu-bar">
             <i id="close" class="fas fa-times"></i>
             <h2> <i class="fas fa-code"></i> Discomaster</h2>
@@ -39,8 +56,9 @@
             <h1>Discover & Master Code</h1>
             <p>Browse our full  documentation and get access to real world code snippets for free</p>
         </div>
-        <button class="header-btn">Get Access <i class="fas fa-chevron-right"></i></button>
+        <button id="open-form" class="header-btn">Get Access <i class="fas fa-chevron-right"></i></button>
     </header>
+    
     <div class="doc">
         <h1>Crash Documentation for begginers</h1>
         <section class="html-snippet">
@@ -128,7 +146,7 @@
     
 
     
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
 </body>

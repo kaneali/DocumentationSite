@@ -169,6 +169,62 @@ header p {
     color: orange;
     margin: 0.3rem
 }
+
+.form {
+    background: indigo;
+    width: 25rem;
+    padding: 2rem;
+    height: auto;
+    color: #fff;
+    margin: 5rem auto;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    
+}
+
+.form-container {
+    background: rgba(0,0,0,0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.form label {
+    display: block;
+    margin: 0.5rem;
+    font-size: 1.5rem;
+
+}
+
+.form input {
+    padding: 0.7rem 1rem;
+    width: 100%
+}
+
+.form-btn {
+    width: 7rem;
+    margin: 2rem auto;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background: #000;
+
+}
+
+.form-container.show {
+    opacity: 1;
+    pointer-events: auto;
+}
 .doc {
     background: #eee;
     padding: 3rem;

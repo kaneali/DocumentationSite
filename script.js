@@ -31,3 +31,17 @@ close.addEventListener('click', () => {
     humberger.style.display = 'block';
 
 })
+
+
+// Form toggle
+const openForm = document.getElementById('open-form')
+const modal = document.getElementById('form-container')
+const closeForm = document.querySelector('.close')
+
+openForm.addEventListener('click', () => {
+    modal.classList.add('show');
+});
+
+closeForm.addEventListener('click', () => {
+    modal.remove('show');
+})
