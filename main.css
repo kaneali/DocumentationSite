@@ -30,7 +30,7 @@ header {
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: #F1F1F1;
-    height: 25rem;
+    height: 20rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -120,7 +120,7 @@ header p {
     left: 0;
     top:0;
     height: 100%;
-    width: 25rem;
+    width: 20rem;
     position: fixed;
     display:none;
     background: #111; 
