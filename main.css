@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2rem;
+
+}
+
+
+
+header {
+    background: #111;
+    background-image: url('https://source.unsplash.com/random');
+    background-position: center;
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #F1F1F1;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header .header-btn {
+    outline: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    background: indigo;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    margin: 2rem auto;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+header .header-btn:hover {
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+header p {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    line-height: 1.5;
+
+}
+
+.header-content input {
+    padding: 0.5rem 4rem;
+    font-size: 1.5rem;
+    text-align: left;
+    border: none;
+    border-radius: 3px;
+    color: indigo;
+    margin: 2rem auto;
+    line-height: 1.5;
+}
+
+.header-content span {
+    font-size: 1.3rem;
+    margin-left: -40px ;
+    align-self: center;
+    color: indigo;
+    opacity: 0.7;
+
+    
+}
+
+.humberger {
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+    font-size: 1.5rem;
+    z-index: 1;
+    cursor: pointer;
+
+}
+
+#close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+}
+
+#close:hover {
+    transform: rotate(180deg);
+}
+
+
+
+.menu-bar {
+    position: absolute;
+    left: 0;
+    top:0;
+    height: 100%;
+    width: 25rem;
+    position: fixed;
+    display:none;
+    background: #111; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    padding: 2rem;
+    transition: 0.3s ease-in-out;
+    z-index: 1;
+    border-right: 1.5rem solid #eee;
+
+    
+}
+.menu-bar h2 {
+    margin: 3rem auto;
+    background: indigo;
+    padding: 1rem;
+    width: 100%;
+    border-left: solid #eee 5px;
+    font-size: 1.2rem;
+    
+}
+
+.menu-bar ul {
+    list-style: none;
+}
+.menu-bar ul li {
+    margin: 1rem auto;
+    text-align: left;
+    padding: 1rem;
+    background: #111;
+    opacity: 0.5;
+    
+}
+
+.menu-bar ul li:hover {
+    background: indigo;
+    border-bottom: 1px solid #eee;
+    border-left: 0.5rem solid #eee;
+    transition: opacity 0.3s ease-in-out;
+
+}
+
+.menu-bar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+
+}
+
+.menu-bar ul li a span {
+    color: #fff;
+    margin-left: 1rem;
+}
+.doc {
+    background: #eee;
+    padding: 3rem;
+    margin: auto;
+    width: 100vw;
+    text-align: center;
+}
+
+section {
+    text-align:justify;
+    width: 50%;
+    margin: 4rem auto;
+    border-left: 20px solid #9c9c9c;
+    border-left-style: ridge;
+    border-bottom: 3px dotted #9c9c9c;
+    padding: 0 0 1rem 1rem;
+}
+
+section h1:first-child {
+    font-size: 2rem;
+    line-height: 2;
+    text-transform: uppercase;
+    /* letter-spacing: 1rem; */
+    font-weight: 700;
+    color: #333;
+}
+
+section:nth-child(odd){
+    border-left: 20px solid dodgerblue;
+    border-left-style: ridge;
+    border-bottom: 3px solid dodgerblue;
+    border-bottom-style: dotted;
+
+}
+
+section:last-child {
+    border-left: 20px solid orange;
+    border-left-style: ridge;
+    border-bottom: 3px solid orange;
+    border-bottom-style: dotted;
+
+}
+
+/* pre {
+    margin-top: 10rem;
+} */
+
+@keyframes slide{
+    from {
+        margin-bottom: 1000px;
+    }
+    to {
+        margin-top: 0;
+    }
+}
+
+.slide {
+    animation-name: slide;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    transition: opacity 1s ease-in-out;
+}
