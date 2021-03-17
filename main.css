@@ -172,7 +172,7 @@ header p {
 
 .form {
     background: indigo;
-    width: 25rem;
+    width: 20rem;
     padding: 2rem;
     height: auto;
     color: #fff;
@@ -184,7 +184,7 @@ header p {
 }
 
 .form-container {
-    background: rgba(0,0,0,0.9);
+    background: rgba(0,0,0,0.95);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -219,6 +219,11 @@ header p {
     color: #fff;
     background: #000;
 
+}
+
+.close {
+    float: right;
+    
 }
 
 .form-container.show {
