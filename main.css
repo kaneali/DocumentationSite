@@ -9,15 +9,15 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
-.container {
+/* .container {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin: 2rem;
+} */
 
-}
+
 
 
 
@@ -30,7 +30,7 @@ header {
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: #F1F1F1;
-    height: 20rem;
+    height:auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,7 +41,7 @@ header {
 header .header-btn {
     outline: none;
     padding: 0.5rem 1rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 400;
     background: indigo;
     border: none;
@@ -58,11 +58,11 @@ header .header-btn:hover {
 }
 
 header h1 {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 header p {
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin-top: 1rem;
     line-height: 1.5;
 
@@ -70,17 +70,17 @@ header p {
 
 .header-content input {
     padding: 0.5rem 4rem;
-    font-size: 1.5rem;
-    text-align: left;
+    font-size: 1rem;
+    text-align: center;
     border: none;
     border-radius: 3px;
     color: indigo;
     margin: 2rem auto;
-    line-height: 1.5;
+    line-height: 1;
 }
 
 .header-content span {
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin-left: -40px ;
     align-self: center;
     color: indigo;
@@ -93,7 +93,7 @@ header p {
     position: absolute;
     left: 2rem;
     top: 2rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
     z-index: 1;
     cursor: pointer;
 
@@ -104,7 +104,7 @@ header p {
     right: 0;
     top: 0;
     padding: 2rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
     cursor: pointer;
 
 }
@@ -119,7 +119,7 @@ header p {
     position: absolute;
     left: 0;
     top:0;
-    height: 100%;
+    height: auto;
     width: 20rem;
     position: fixed;
     display:none;
@@ -128,17 +128,17 @@ header p {
     padding: 2rem;
     transition: 0.3s ease-in-out;
     z-index: 1;
-    border-right: 1.5rem solid #eee;
-
+    border-right: 1rem solid #eee;
+    
     
 }
 .menu-bar h2 {
     margin: 3rem auto;
     background: indigo;
-    padding: 1rem;
+    padding: 1rem ;
     width: 100%;
-    border-left: solid #eee 5px;
-    font-size: 1.2rem;
+    border-left: solid #eee 3px;
+    font-size: 1rem;
     
 }
 
@@ -156,22 +156,28 @@ header p {
 
 .menu-bar ul li:hover {
     background: indigo;
-    border-bottom: 1px solid #eee;
-    border-left: 0.5rem solid #eee;
+    border-bottom: 0.1rem solid #eee;
+    border-left: 0.3rem solid #eee;
     transition: opacity 0.3s ease-in-out;
-
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    
 }
 
 .menu-bar ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1rem;
 
 }
 
-.menu-bar ul li a span {
+/* .menu-bar ul li a span {
     color: #fff;
     margin-left: 1rem;
+} */
+
+.menu-bar ul li .andSign {
+    color: orange;
+    margin: 0.3rem
 }
 .doc {
     background: #eee;
@@ -181,57 +187,83 @@ header p {
     text-align: center;
 }
 
-section {
-    text-align:justify;
-    width: 50%;
-    margin: 4rem auto;
-    border-left: 20px solid #9c9c9c;
-    border-left-style: ridge;
-    border-bottom: 3px dotted #9c9c9c;
-    padding: 0 0 1rem 1rem;
+.doc h1 {
+    color: indigo;
 }
 
-section h1:first-child {
-    font-size: 2rem;
+section {
+    text-align:justify;
+    width: 70%;
+    margin: 4rem auto;
+    border-left: 10px solid #9c9c9c;
+    border-left-style: ridge;
+    border-bottom: 2px solid #9c9c9c;
+    padding: 0 0 1rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+
+}
+
+section h1 {
     line-height: 2;
     text-transform: uppercase;
-    /* letter-spacing: 1rem; */
     font-weight: 700;
     color: #333;
 }
 
 section:nth-child(odd){
-    border-left: 20px solid dodgerblue;
+    border-left: 10px solid dodgerblue;
     border-left-style: ridge;
-    border-bottom: 3px solid dodgerblue;
-    border-bottom-style: dotted;
+    border-bottom: 2px solid dodgerblue;
+    border-bottom-style: solid;
 
 }
 
 section:last-child {
-    border-left: 20px solid orange;
+    border-left: 10px solid orange;
     border-left-style: ridge;
-    border-bottom: 3px solid orange;
-    border-bottom-style: dotted;
+    border-bottom: 2px solid orange;
+    border-bottom-style: solid;
 
 }
 
-/* pre {
-    margin-top: 10rem;
-} */
 
-@keyframes slide{
-    from {
-        margin-bottom: 1000px;
-    }
-    to {
-        margin-top: 0;
-    }
+pre {
+    
+    width: 70%;
+    text-align: left;
+    margin: auto;
 }
 
-.slide {
-    animation-name: slide;
-    animation-duration: 0.5s;
-    animation-iteration-count: infinite;
-    transition: opacity 1s ease-in-out;
+code {
+    
+    width: 100%;
+    height: 25rem;
+    font-size: 1rem;
+    font-family: 'Fira Code',sans-serif; 
+    border: 10px solid #333;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    line-height: 1.5;
+
+}
+
+@media (max-width: 850px) {
+    section {
+        width: 100%;
+        font-size: 0.7rem;
+    }
+    
+    pre {
+        width: 100%;
+
+    }
+
+    .doc h1, header h1 {
+        font-size: 1rem;
+    }
+
+    header p {
+        font-size: 0.7rem;
+        
+    }
 }
