@@ -2,11 +2,6 @@ const humberger = document.querySelector('.humberger');
 const nav = document.querySelector('.menu-bar');
 const close = document.querySelector('#close');
 
-
-
-// const move = document.querySelector('.slide');
-
-
 document.addEventListener('DOMContententLoaded', () => {
     const cards = document.querySelectorAll('pre');
     cards.forEach((el) => {
