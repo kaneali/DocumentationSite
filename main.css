@@ -9,17 +9,6 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
-/* .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-} */
-
-
-
-
 
 header {
     background: #111;
@@ -302,11 +291,25 @@ code {
     }
 
     .doc h1, header h1 {
-        font-size: 1rem;
+        font-size: 2rem;
     }
 
     header p {
         font-size: 0.7rem;
-        
+        text-align: center;
+        padding: 0 2rem        
     }
+
+    .humberger {
+        left: 1rem;
+    }
+
+    .menu-bar ul {
+        overflow-y: scroll;
+    }
+
+    .html-snippet h1, .css-snippet h1, .js-snippet h1 {
+        font-size: 1rem;
+    }
+    
 }
