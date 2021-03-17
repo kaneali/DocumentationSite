@@ -129,6 +129,7 @@ header p {
     transition: 0.3s ease-in-out;
     z-index: 1;
     border-right: 1rem solid #eee;
+    border-bottom: 1rem solid #eee;
     
     
 }
