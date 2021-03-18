@@ -38,10 +38,15 @@ const openForm = document.getElementById('open-form')
 const modal = document.getElementById('form-container')
 const closeForm = document.querySelector('.close')
 
-openForm.addEventListener('click', () => {
-    modal.classList.add('show');
-});
 
-closeForm.addEventListener('click', () => {
-    modal.remove('show');
+document.addEventListener('DOMContentLoaded', () => {
+
+    openForm.addEventListener('click', () => {
+        modal.classList.add('show');
+    });
+    
+    closeForm.addEventListener('click', () => {
+        modal.remove('show');
+    })
 })
+

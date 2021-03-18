@@ -57,7 +57,7 @@ header p {
 
 }
 
-.header-content input {
+.header-content #search {
     padding: 0.5rem 4rem;
     font-size: 1rem;
     text-align: center;
@@ -195,6 +195,7 @@ header p {
     left: 0;
     height: 100vh;
     width: 100vw;
+    z-index: 1;
     transition: opacity 0.3s ease-in-out;
 }
 
@@ -226,7 +227,7 @@ header p {
     
 }
 
-.form-container.show {
+#form-container.show {
     opacity: 1;
     pointer-events: auto;
 }
