@@ -10,6 +10,12 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+#external-search {
+    width: 50%;
+    margin: 2rem auto;
+    text-align: left;
+}
+
 header {
     background: #111;
     background-image: url('https://source.unsplash.com/random');
@@ -48,24 +54,26 @@ header .header-btn:hover {
 
 header h1 {
     font-size: 2rem;
+    margin: 1rem auto;
 }
 
 header p {
     font-size: 1rem;
-    margin-top: 1rem;
-    line-height: 1.5;
 
 }
 
 .header-content #search {
-    padding: 0.5rem 4rem;
+    padding: 0.5rem 0  0.5rem  1rem;
     font-size: 1rem;
-    text-align: center;
+    text-align: left;
     border: none;
     border-radius: 3px;
-    color: indigo;
-    margin: 2rem auto;
+    color: #444;
+    margin: 5rem auto 0 auto;
     line-height: 1;
+    width: 300px;
+    outline: none;
+
 }
 
 .header-content span {
@@ -160,11 +168,6 @@ header p {
 
 }
 
-/* .menu-bar ul li a span {
-    color: #fff;
-    margin-left: 1rem;
-} */
-
 .menu-bar ul li .andSign {
     color: orange;
     margin: 0.3rem
@@ -243,7 +246,23 @@ header p {
     color: indigo;
 }
 
+h3 {
+    font-family: poppins;
+    color: #333;
+    opacity: 0.7;
+    font-weight: lighter;
+}
 
+h3 span {
+    color: indigo;
+    margin-right: 1rem;
+}
+
+hr {
+    width: 70%;
+    color: #eee;
+    margin: 2rem auto;
+}
 
 section {
     text-align:justify;
@@ -341,6 +360,61 @@ code {
 
 }
 
+.footer {
+    background: #111;
+    background-image: url('https://picsum.photos/1920/1080');
+    background-position: center;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    width: 100vw;
+    height: 25rem;
+    padding: 3rem;
+}
+
+.footer div {
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.footer div h2 {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+
+footer p {
+    color: lightgrey;
+    text-align: center;
+    font-size: 1rem;
+    background: #000;
+    padding: 1rem 0;
+} 
+
+.footer div a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 2;
+    margin-right: 2rem;
+}
+
+.map {
+    background: none;
+    text-align: center;
+    align-self: center;
+    height: 100%;
+    margin-right: 2rem;
+    opacity: 0.2;
+    border: 5px solid indigo;
+    
+}
+
 @media (max-width: 850px) {
     section {
         width: 100%;
@@ -353,7 +427,7 @@ code {
     }
 
     .doc h1, header h1 {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     header p {
@@ -372,6 +446,28 @@ code {
 
     .html-snippet h1, .css-snippet h1, .js-snippet h1 {
         font-size: 1rem;
+    }
+
+    #external-search {
+        width: 100%;
+    }
+
+    footer .footer-img {
+        display: none;
+    }
+
+    .footer div a {
+        font-size: 0.7rem;
+    }
+    
+    .footer div h2 {
+        font-size: 1rem;
+
+    }
+
+    .footer {
+        grid-template-columns: repeat(2, 1fr);
+        
     }
     
 }
